@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989860783196",
+    "project_id": "absapp-fe23c",
+    "storage_bucket": "absapp-fe23c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989860783196:android:44759109e47298a8c77299",
+        "android_client_info": {
+          "package_name": "com.example.abs_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3A4RVyr8oqoZqpNHGwPBaCIcB0H7TZfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

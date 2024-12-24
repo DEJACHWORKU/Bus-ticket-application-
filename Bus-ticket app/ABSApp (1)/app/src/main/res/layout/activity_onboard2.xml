@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard2">
+
+    <ImageView
+        android:id="@+id/arulogo1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/page2"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/arutxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arulogo1"
+        android:fontFamily="@font/poppins"
+        android:text="Any time any where"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="75dp"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arutxt1"
+        android:fontFamily="@font/poppins_extralight"
+        android:padding="40dp"
+        android:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/arulogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group2"
+        android:layout_marginTop="690dp"
+        android:layout_marginLeft="170dp"/>
+
+
+
+    <TextView
+        android:id="@+id/nextt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arulogo2"
+        android:text=">|Next|>"
+        android:layout_marginLeft="340dp"
+        android:textColor="@color/purple_0"/>
+
+</RelativeLayout>

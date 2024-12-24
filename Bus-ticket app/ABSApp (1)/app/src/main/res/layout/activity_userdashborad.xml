@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdashborad">
+
+    <fragment
+
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+         />
+
+        <RelativeLayout
+
+            android:layout_below="@id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DCDADA">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            >
+            <!-- Direction Button -->
+            <TextView
+                android:id="@+id/directionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directions"
+                android:textSize="18sp"
+
+                android:layout_marginStart="16dp"/>
+
+            <!-- Start Button -->
+            <ImageView
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:src="@android:drawable/ic_popup_reminder"
+                android:backgroundTint="@color/purple"
+                android:background="@color/purple"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Current Location Input -->
+            <EditText
+                android:id="@+id/currentLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/startButton"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/lavender_border"
+                android:hint="Asella Bus station"
+                android:paddingLeft="50dp"
+                android:textColor="@color/black"
+                android:editable="false"
+                 />
+
+            <!-- Destination Input -->
+
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_below="@id/currentLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/search"
+
+                app:iconifiedByDefault="false"
+                app:searchHintIcon="@null"
+                app:queryHint="Search Destination"
+                android:focusable="false"
+                app:closeIcon="@drawable/baseline_close_24"
+                app:searchIcon="@drawable/baseline_search_24"
+                android:background="@drawable/lavender_border"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="60dp"
+                android:layout_below="@id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"
+                android:scrollbars="vertical"
+                 />
+
+        </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

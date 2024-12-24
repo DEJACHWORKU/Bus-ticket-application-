@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trafic.detailadmin"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailTitle"
+            android:text="Title"
+            android:padding="4dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="14dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/detailImage"
+
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_circle_up_24"
+            android:scaleType="fitXY"
+            android:background="@drawable/lavender_border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:text="Kilometer"
+            android:layout_gravity="center"
+            android:id="@+id/detailLang"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:background="@drawable/lavender_border"
+            />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:fontFamily="@font/poppins"
+            android:maxHeight="229dp"
+            android:padding="20dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/recCard"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/recImage"
+                        android:src="@drawable/ic_baseline_directions_car_24"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/recTitle"
+                        android:text="High Roof"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/recImage"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/price1"
+                        android:fontFamily="@font/poppins"
+                        android:text="Price"
+                        android:layout_toEndOf="@id/recTitle"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="0dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seats1"
+                        android:text="No of person"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/purple1"
+                        android:textSize="14sp"
+                        android:layout_toEndOf="@id/recImage"
+                        android:layout_below="@id/recTitle"
+                        android:layout_marginStart="20dp"
+                        android:maxLines="1"
+                        android:layout_marginBottom="12dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recCard"
+                android:id="@+id/recCard2"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/recImage2"
+                        android:src="@drawable/ic_baseline_directions_car_filled_24"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/recTitle2"
+                        android:text="Dolfin"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/recImage2"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/price2"
+                        android:text="Price"
+                        android:fontFamily="@font/poppins"
+                        android:layout_toEndOf="@id/recTitle2"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="0dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seats2"
+                        android:text="No of person"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/purple1"
+                        android:textSize="14sp"
+                        android:layout_toEndOf="@id/recImage2"
+                        android:layout_below="@id/recTitle2"
+                        android:layout_marginStart="20dp"
+                        android:maxLines="1"
+                        android:layout_marginBottom="12dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recCard2"
+                android:id="@+id/recCard3"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/recImage3"
+                        android:src="@drawable/ic_baseline_directions_car_24"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/recTitle3"
+                        android:text="Bus"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/recImage3"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/price3"
+                        android:text="Price"
+                        android:fontFamily="@font/poppins"
+                        android:layout_toEndOf="@id/recTitle3"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="0dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seats3"
+                        android:text="No of person"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/purple1"
+                        android:textSize="14sp"
+                        android:layout_toEndOf="@id/recImage3"
+                        android:layout_below="@id/recTitle3"
+                        android:layout_marginStart="20dp"
+                        android:maxLines="1"
+                        android:layout_marginBottom="12dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recCard3"
+                android:id="@+id/recCard4"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/recImage4"
+                        android:src="@drawable/ic_baseline_directions_car_filled_24"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/recTitle4"
+                        android:text="KitKit"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/recImage4"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/price4"
+                        android:text="Price"
+                        android:layout_toEndOf="@id/recTitle4"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="0dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seats4"
+                        android:text="No of person"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/purple1"
+                        android:textSize="14sp"
+                        android:layout_toEndOf="@id/recImage4"
+                        android:layout_below="@id/recTitle4"
+                        android:layout_marginStart="20dp"
+                        android:maxLines="1"
+                        android:layout_marginBottom="12dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:layout_below="@id/recCard4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:menu_fab_size="normal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                app:menu_colorPressed="@color/purple1"
+                app:menu_colorNormal="@color/purple_0"
+                app:menu_icon="@drawable/baseline_format_list_bulleted_24"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editButton"
+                    android:src="@drawable/baseline_edit_24"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/darkwhite"
+                    app:fab_size="mini"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deleteButton"
+
+                    android:src="@drawable/baseline_delete_24"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/darkwhite"
+                    app:fab_size="mini"/>
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

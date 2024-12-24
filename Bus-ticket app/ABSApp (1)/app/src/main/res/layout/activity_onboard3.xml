@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard3">
+
+    <ImageView
+        android:id="@+id/arulogo1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/fi1"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/arutxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arulogo1"
+        android:fontFamily="@font/poppins"
+        android:text="Hi, Welcome Back!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="75dp"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/nene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arutxt1"
+        android:fontFamily="@font/poppins_extralight"
+        android:padding="40dp"
+        android:text="In publishing and graphic design, Lorem ipsum is a "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textregg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nene"
+        android:background="@drawable/custom_edition"
+        android:fontFamily="@font/poppins_light"
+        android:padding="12dp"
+        android:text="Use current Location"
+        android:textAlignment="center"
+        android:textColor="@color/purple_0"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="90dp"/>
+
+    <ImageView
+        android:id="@+id/arulogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group75"
+        android:layout_marginTop="690dp"
+        android:layout_marginLeft="170dp"/>
+
+
+
+</RelativeLayout>
